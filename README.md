@@ -9,12 +9,17 @@ HiApp are developed using these libraries.
 ├── Task Runner: [Grunt]   
 ├── Module Loader: [Require.js]  
 ├── Templating Library: [handlebars]  
-├── Stylesheet Language: [LESS] 
-├── Stylesheet Reset: [normalize]
-└── Characteristics of sniffer: [Moderniz] 
+├── Stylesheet Language: [LESS]  
+├── Stylesheet Reset: [normalize]  
+└── Characteristics of sniffer: [Moderniz]  
 
 ## Demo
-
+See [Demo]  
+*because all static respones from github.io has been added 
+```shell
+Cache-Control:no-cache
+```, the Images Cache will always fall. you can customize it in your own Web Server.
+*
 
 ## Getting Started
 ### Prepare
@@ -33,21 +38,30 @@ for fast deployment, you can use
 ```shell
     node web-server.js
 ```
+  
 in gruntTask, sth has been done for making producing environment's consistent(not to be polluted by build process),so feel free to use src/index.html for develop.
 
-## Details
+## Features
+这里列出本项目的部分特性：  
+1.完整的自动化构建流程(模块加载、压缩混淆、内联图片Base64转换、离线存储支持)  
+2.采用jQ插件 + handlebar 方式管理 templates  
+3.less模块式设计  
+4.兼容 IE6+、Chrome、FF  
+注意：时间所限，IE6下透明PNG图片问题暂未处理，此处可为IE6的图片引用为8位的gif以实现兼容显示。  
 
 ## License
 Source Copyright:
-Copyright (c) 2014 qige023. MIT Licensed, see [LICENSE] for details.
+Copyright (c) 2014 qige023. MIT Licensed, see [LICENSE] for details.  
 Images Copyright:
-All PSD & Images comes from 腾讯视频/京东 UED, you can't not use these images for busyness use.
+All PSD & Images comes from 腾讯视频/京东 UED, you can not put these PSD/images in busyness use.
 
 
 [jQuery]:http://jquery.com/  
 [Grunt]:http://gruntjs.com/  
 [Require.js]:http://requirejs.org/
-[handlebars]:https://handlebarsjs.com/ 
-[LESS]:http://lesscss.net/
-[Moderniz]:http://modernizr.com/
-[normalize]:https://github.com/necolas/normalize.css/tree/v1 
+[handlebars]:https://handlebarsjs.com/  
+[LESS]:http://lesscss.net/  
+[Moderniz]:http://modernizr.com/  
+[Demo]:http://qige023.github.io/  
+[normalize]:https://github.com/necolas/normalize.css/tree/v1  
+[LICENSE]: https://github.com/qige023/jdtest/blob/master/README.md
