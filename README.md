@@ -11,13 +11,14 @@ jdtest project is developed by these libraries.
 ├── Templating Library: [handlebars]  
 ├── Stylesheet Language: [LESS]  
 ├── Stylesheet Reset: [normalize]  
+├── HTML5's tag Support: [html5shiv]   
 └── Characteristics of sniffer: [Moderniz]  
 
 ## Demo
 See [Demo]  
 *because all static respones from github.io has been added*
 ```shell
-Cache-Control:no-cache
+    Cache-Control:no-cache
 ```
 *, the Images Cache will always fall. you can customize it in your own Web Server.*
 
@@ -48,7 +49,13 @@ in gruntTask, sth has been done for making producing environment's consistent(no
 2.采用jQ插件 + handlebar 方式管理 templates  
 3.less模块式设计  
 4.兼容 IE6+、Chrome、FF  
+5.适应多分辨率屏幕
 注意：时间所限，IE6下透明PNG图片问题暂未处理，此处可为IE6的图片引用为8位的gif以实现兼容显示。  
+
+## Todo
+1.针对移动端(指屏幕宽度)的响应式设计  
+2.为IE6 添加8位透明gif支持  
+3.采用backbone/marionette进行视图管理  
 
 ## License
 Source Copyright:
@@ -65,4 +72,5 @@ All PSD & Images comes from 腾讯视频/京东 UED, you can not put these PSD/i
 [Moderniz]:http://modernizr.com/  
 [Demo]:http://qige023.github.io/  
 [normalize]:https://github.com/necolas/normalize.css/tree/v1  
+[html5shiv]:https://github.com/aFarkas/html5shiv  
 [LICENSE]: https://github.com/qige023/jdtest/blob/master/README.md
