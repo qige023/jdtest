@@ -1,0 +1,106 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//## 通用颜色。参考bootstrap3
+// -------------------------
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+@brand-primary:         #01aef0;
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-link:            #FF7800;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-disabled:        #acb8b9;
+@login-input:           #1c1c1c;
+@login-select:           #1c1c1c;
+
+
+//== Scaffolding
+// ## 设置一些全局样式值
+// -------------------------
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            #000;
+@text-info:         #202020;
+//** Global textual link color.
+@link-color:            @brand-link;
+//** Link active color
+@link-active-color:     darken(@link-color, 15%);
+//** 该颜色主要用于header/footer的背景色
+@theme:                 rgba(247, 247, 247, 1);
+@theme-full:           rgba(247, 247, 247, 1);
+@border-color:          #ccc;
+
+@border-radius:         3px;
+
+@page-width:            980px;
+
+//== Typography
+//## Font, line-height, and color for body text, header, footer and more
+// -------------------------
+
+@font-family-base:        "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-size-base:          16px;
+@font-size-big:           ceil((@font-size-base * 1.125));   // ~18px
+@font-size-small:         ceil((@font-size-base * 0.875));  // ~14px
+@font-size-tiny:          ceil((@font-size-base * 0.75));   // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.25));  // ~36px
+@font-size-h2:            ceil((@font-size-base * 1.87));   // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.5));    // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25));   // ~20px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.75));   // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.25; // 20/16
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+//** indent for use with 'margin', 'padding', rely on @line-height-computed
+@indent:                  ceil(@line-height-computed/2); // ~10px
+
+//** header/footer
+@header-height:           46px;
+@header-font-weight:      500;
+
+//** transition
+@transition-timing:       cubic-bezier(0.645, 0.045, 0.355, 1.000);
+@transition-duration:     400ms;
+
+
+//== ZIndex
+//## 层级
+// -------------------------
+@zindex-base:             0;
+@zindex-header:           @zindex-base + 100;
+@zindex-article:          @zindex-base + 50;
+
+//== List
+//## 列表相关
+// -------------------------
+@list-height:             44px;
+@list-height-big:         65px;
+@list-height-small:       24px;
+
+@list-border-color:       lighten(@border-color, 5%);
+@list-tap-color:          #d9d9d9;
+
+
+//== Form
+//## 表单相关
+// -------------------------
+@form-progress-height:        5px;
+@form-radio-button:           26px;
+
+@button-height:               34px;

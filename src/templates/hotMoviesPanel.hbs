@@ -1,0 +1,132 @@
+<ul class="big_film">
+    {{#each movies}}
+        {{#compare_lt @index 3}}
+            <li>
+                <div class="big_film_up">
+                    <div class="num">{{hotMoviesPanel_getRank @index}}</div>
+                    <img src="{{img}}" />
+                </div>
+                <div class="big_film_down">
+                    <div class="money">
+                        <div class="ico_money"></div>
+                        <div class="desc_money">{{price}}</div>
+                    </div>
+                    <div class="desc_film">
+                        {{name}}
+                    </div>
+                    <div class="comment">
+                        <span class="orange2">{{commentNum}}</span>&nbsp;条评论
+                    </div>
+                    <div class="starbox">
+                        <div class="fLeft">
+                            <div class="star_container">
+                                {{#compare_gt point '0.2'}}
+                                    <div class="ico_star">
+                                    </div>
+                                {{else}}
+                                    <div class="ico_not_star">
+                                    </div>
+                                {{/compare_gt}}
+                                {{#compare_gt point '0.4'}}
+                                    <div class="ico_star">
+                                    </div>
+                                {{else}}
+                                    <div class="ico_not_star">
+                                    </div>
+                                {{/compare_gt}}
+                                {{#compare_gt point '0.6'}}
+                                    <div class="ico_star">
+                                    </div>
+                                {{else}}
+                                    <div class="ico_not_star">
+                                    </div>
+                                {{/compare_gt}}
+                                {{#compare_gt point '0.8'}}
+                                    <div class="ico_star">
+                                    </div>
+                                {{else}}
+                                    <div class="ico_not_star">
+                                    </div>
+                                {{/compare_gt}}
+                                {{#compare_gt point '1.0'}}
+                                    <div class="ico_star">
+                                    </div>
+                                {{else}}
+                                    <div class="ico_not_star">
+                                    </div>
+                                {{/compare_gt}}
+                            </div>
+                        </div>
+                        <div class="fRight">
+                            <span class="bold">
+                                {{hotMoviesPanel_getPointPercentage point}}
+                            </span>
+                            <span>好评</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        {{/compare_lt}}
+    {{/each}}
+</ul>
+<ul class="small_film">
+    {{#each movies}}
+        {{#compare_gt @index 3}}
+            {{#compare_lt @index 7}}
+                {{#hotMoviesPanel_isNoBoder @index}}
+                <li class="no_border">
+                {{else}}
+                <li>
+                {{/hotMoviesPanel_isNoBoder}}
+                <div class="big_film_up">
+                    <div class="num">{{hotMoviesPanel_getRank @index}}</div>
+                    <img src="{{img}}" />
+                </div>
+                <div class="big_film_down">
+                    <div class="money">
+                        <div class="ico_money"></div>
+                        <div class="desc_money">{{price}}</div>
+                    </div>
+                    <div class="starbox">
+                        {{#compare_gt point '0.2'}}
+                            <div class="ico_star">
+                            </div>
+                        {{else}}
+                            <div class="ico_not_star">
+                            </div>
+                        {{/compare_gt}}
+                        {{#compare_gt point '0.4'}}
+                            <div class="ico_star">
+                            </div>
+                        {{else}}
+                            <div class="ico_not_star">
+                            </div>
+                        {{/compare_gt}}
+                        {{#compare_gt point '0.6'}}
+                            <div class="ico_star">
+                            </div>
+                        {{else}}
+                            <div class="ico_not_star">
+                            </div>
+                        {{/compare_gt}}
+                        {{#compare_gt point '0.8'}}
+                            <div class="ico_star">
+                            </div>
+                        {{else}}
+                            <div class="ico_not_star">
+                            </div>
+                        {{/compare_gt}}
+                        {{#compare_gt point '1.0'}}
+                            <div class="ico_star">
+                            </div>
+                        {{else}}
+                            <div class="ico_not_star">
+                            </div>
+                        {{/compare_gt}}
+                    </div>
+                </div>
+            </li>
+            {{/compare_lt}}
+        {{/compare_gt}}
+    {{/each}}
+</ul>

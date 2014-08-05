@@ -1,0 +1,217 @@
+//
+// Mixins
+// --------------------------------------------------
+// ====================== FLEXBOX ====================== //
+.display-box() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-flexbox;
+  display: box;
+}
+
+// box-pack: 父容器中子容器的水平对齐方式
+.box-pack(@pack) {
+  -webkit-box-pack: @pack;
+  -moz-box-pack: @pack;
+  -o-box-pack: @pack;
+  -ms-flex-pack: @pack;
+}
+
+// box-orient switch: 规定容器排列方式
+.box-orient(@orient) when (@orient = horizontal) {
+  -ms-flex-direction: row;
+}
+.box-orient(@orient) when (@orient = vertical) {
+  -ms-flex-direction: column;
+}
+.box-orient(@orient) {
+  -webkit-box-orient: @orient;
+  -moz-box-orient: @orient;
+  -o-box-orient: @orient;
+}
+
+// box-flex: 让子容器针对父容器的宽度进行切分
+.box-flex(@flex) {
+  -webkit-box-flex: @flex;
+  -moz-box-flex: @flex;
+  -o-box-flex: @flex;
+  -ms-flex: @flex;
+}
+
+// box-ordinal-group: 规定容器子元素的显示次序，升序
+.ordinal-group(@group) {
+  -webkit-box-ordinal-group: @group;
+  -moz-box-ordinal-group: @group;
+  -o-box-ordinal-group: @group;
+  -ms-flex-order: @group;
+}
+
+// 使用哪种盒子模型
+// content-box: 使用W3C标准，元素的宽高包含内边距、边框、元素内容宽高（元素实际内容的宽高不包含边框/边距）。默认值
+// border-box: 使用IE模型，元素的宽高等于元素实际内容的宽高（元素实际内容的宽高包含边框/边距）。
+.box-sizing(@sizing) {
+  -webkit-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+
+.box-align(@align) {
+  -webkit-box-align: @align;
+  -moz-box-align: @align;
+  -o-box-align: @align;
+  -ms-box-align: @align;
+  box-align: @align;
+}
+
+// ====================== ANIMATION ====================== //
+.animation-name(@name) {
+  -webkit-animation-name: @name;
+  animation-name: @name;
+}
+
+.animation-name(@name, @disablePointerEvent) {
+  .animation-name(@name);
+  pointer-events: none;
+}
+
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+  animation-duration: @duration;
+}
+
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+  animation-delay: @delay;
+}
+
+.animation-fill-mode(@mode) {
+  -webkit-animation-fill-mode: @mode;
+  animation-fill-mode: @mode;
+}
+
+.animation-timing-function(@name) {
+  -webkit-animation-timing-function: @name;
+  animation-timing-function: @name;
+}
+
+.transition(...) {
+  transition: @arguments;
+  -webkit-transition: @arguments;
+}
+
+.transition-property(...) {
+  -webkit-transition-property: @arguments;
+  -moz-transition-property: @arguments;
+  -o-transition-property: @arguments;
+  transition-property: @arguments;
+}
+
+.transition-duration(@duration) {
+  -webkit-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+.transition-timing-function(@name) {
+  -moz-transition-timing-function: @name;
+  -webkit-transition-timing-function: @name;
+  -o-transition-timing-function: @name;
+  transition-timing-function: @name;
+}
+
+.transform(@args) {
+  -webkit-transform: @args;
+  transform: @args;
+}
+
+.transform-origin(@args) {
+  -ms-transform-origin: @args;
+  -webkit-transform-origin: @args;
+  -moz-transform-origin: @args;
+  -o-transform-origin: @args;
+  transform-origin: @args;
+}
+
+.transform-style(@args) {
+  -webkit-transform-style: @args;
+  -moz-transform-style: @args;
+  -ms-transform-style: @args;
+  -o-transform-style: @args;
+  transform-style: @args;
+}
+
+.backface-visibility(@args) {
+  -webkit-backface-visibility: @args;
+  -moz-backface-visibility: @args;
+  -ms-backface-visibility: @args;
+  -o-backface-visibility: @args;
+  backface-visibility: @args;
+}
+
+.background-size(...) {
+  -webkit-background-size: @arguments;
+  -moz-background-size: @arguments;
+  background-size: @arguments;
+}
+
+.perspective(@args) {
+  -webkit-perspective: @args;
+  -moz-perspective: @args;
+  -ms-perspective: @args;
+  -o-perspective: @args;
+  perspective: @args;
+}
+
+// ====================== BOX DECORATION ====================== //
+.box-shadow(...) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  -o-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.border-radius(...) {
+  -webkit-border-radius: @arguments;
+  border-radius: @arguments;
+}
+
+// ====================== BACKGROUND ====================== //
+.background-size(@arg) {
+  -webkit-background-size: @arg;
+  -moz-background-size: @arg;
+  background-size: @arg;
+}
+
+// ====================== UTILITIES ====================== //
+.ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+
+

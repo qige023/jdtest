@@ -1,0 +1,23 @@
+<div class="focus_inner">
+    <a href="javascript:void(0);" class="focus_img incoming"></a>
+    <a href="javascript:void(0);" class="focus_img outgoing"></a>
+</div>
+<div class="focus_control">
+    <div class="upper">
+        <div class="ico_player"></div>
+        <div class="desc">《万凰之王》[至29集]静妃陷害伊兰败露，伊兰反将一军</div>
+    </div>
+    <div class="downer">
+        <div class="preview">
+            <ul>
+                {{#each movies}}
+                    <li movieId="{{@index}}"><img src="{{sp}}" /></li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="select">
+            <a class="prev"></a>
+            <a class="next"></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+
+  .container {
+    width: @page-width;
+    height: 81px;
+    margin: 0 auto;
+
+    .fLeft {
+      background: url(../images/logo_tencent_telecom.png);
+      width: 292px;
+      height: 54px;
+      float: left;
+      margin-top: 13px;
+    }
+
+    .fRight {
+      width: 490px;
+      height: 41px;
+      background: #ecefef;
+      border: 1px solid #dcdcdc;
+      .border-radius(2px);
+      float: right;
+      margin-top: 20px;
+
+      .txt {
+        font-size: 12px;
+        padding: 13px 0 0 12px;
+      }
+    }
+  }
+}
+
+article {
+  width: 100%;
+}
+
+section {
+  width: @page-width;
+  margin: 0 auto;
+
+  &.upper, &.downer {
+    margin-top: 20px;
+  }
+}

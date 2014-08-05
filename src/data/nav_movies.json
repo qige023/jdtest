@@ -1,0 +1,74 @@
+{
+    "movies": [
+        {
+            "name": "离婚律师",
+            "sp": "styles/images/nav_small/1.jpg",
+            "bp": "styles/images/nav_big/1.jpg",
+            "desc": "《离婚律师》精彩提前看萌大叔吴秀波舌战姚晨",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "古剑奇谭",
+            "sp": "styles/images/nav_small/2.jpg",
+            "bp": "styles/images/nav_big/2.jpg",
+            "desc": "《古剑奇谭》（至20集）黑耀示爱晴雪 苏苏吃醋",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "爱情回来了",
+            "sp": "styles/images/nav_small/3.jpg",
+            "bp": "styles/images/nav_big/3.jpg",
+            "desc": "《爱情回来了》（至36集）陈赫戚薇恋情曝光大秀甜蜜",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "产科医生",
+            "sp": "styles/images/nav_small/4.jpg",
+            "bp": "styles/images/nav_big/4.jpg",
+            "desc": "《产科医生》（至26集）佟丽娅恋上暖男上司",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "人间·小团圆",
+            "sp": "styles/images/nav_small/5.jpg",
+            "bp": "styles/images/nav_big/5.jpg",
+            "desc": "《人间·小团圆》每个大咖都有一个秘密",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "昔日男神变干爹",
+            "sp": "styles/images/nav_small/6.jpg",
+            "bp": "styles/images/nav_big/6.jpg",
+            "desc": "《昔日男神变干爹》岁月何止是把猪饲料",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "求爱嫁期",
+            "sp": "styles/images/nav_small/7.jpg",
+            "bp": "styles/images/nav_big/7.jpg",
+            "desc": "《求爱嫁期》史上最诡异婚纱照拍摄指南",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "超级先生",
+            "sp": "styles/images/nav_small/8.jpg",
+            "bp": "styles/images/nav_big/8.jpg",
+            "desc": "《超级先生》谢娜调节争执遭乐嘉强吻",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "High-school",
+            "sp": "styles/images/nav_small/9.jpg",
+            "bp": "styles/images/nav_big/9.jpg",
+            "desc": "《High-school》（至03集）优炫意外溺水被嘲笑",
+            "bgColor": "rgb(48, 10, 51);"
+        },
+        {
+            "name": "中国惊奇先生",
+            "sp": "styles/images/nav_small/10.jpg",
+            "bp": "styles/images/nav_big/10.jpg",
+            "desc": "《中国惊奇先生》美女警花遭迷醉险遭毒手",
+            "bgColor": "rgb(48, 10, 51);"
+        }
+    ]
+}

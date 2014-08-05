@@ -1,0 +1,47 @@
+{
+    "movies": [
+        {
+            "name": "G70F20CN3L音乐播放器",
+            "img":"styles/images/hot_file/hot_file_1.jpg",
+            "point": 0.87,
+            "commentNum": 329,
+            "price": "4399.00"
+        },{
+            "name": "三星Galaxy Note3",
+            "img":"styles/images/hot_file/hot_file_2.jpg",
+            "point": 0.35,
+            "commentNum": 125,
+            "price": "1999.00"
+        },{
+            "name": "Ipod touch mini2",
+            "img":"styles/images/hot_file/hot_file_3.jpg",
+            "point": 0.65,
+            "commentNum": 99,
+            "price": "5499.00"
+        },{
+            "name": "Ipod touch mini2",
+            "img":"styles/images/hot_file/hot_file_4.jpg",
+            "point": 0.23,
+            "commentNum": 99,
+            "price": "360.00"
+        },{
+            "name": "Ipod touch mini2",
+            "img":"styles/images/hot_file/hot_file_5.jpg",
+            "point": 0.45,
+            "commentNum": 99,
+            "price": "120.00"
+        },{
+            "name": "Ipod touch mini2",
+            "img":"styles/images/hot_file/hot_file_6.jpg",
+            "point": 0.65,
+            "commentNum": 99,
+            "price": "750.00"
+        },{
+            "name": "Ipod touch mini2",
+            "img":"styles/images/hot_file/hot_file_7.jpg",
+            "point": 0.98,
+            "commentNum": 99,
+            "price": "650.00"
+        }
+    ]
+}
