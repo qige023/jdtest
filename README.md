@@ -4,7 +4,7 @@
 
 ## Depend
 
-HiApp are developed using these libraries.     
+jdtest project is developed by these libraries.     
 ├── Framework: [jQuery]  (in future maybe using backbone/marionette for views control)   
 ├── Task Runner: [Grunt]   
 ├── Module Loader: [Require.js]  
@@ -15,11 +15,12 @@ HiApp are developed using these libraries.
 
 ## Demo
 See [Demo]  
-*because all static respones from github.io has been added 
+*because all static respones from github.io has been added*
 ```shell
 Cache-Control:no-cache
-```, the Images Cache will always fall. you can customize it in your own Web Server.
-*
+```
+*, the Images Cache will always fall. you can customize it in your own Web Server.*
+
 
 ## Getting Started
 ### Prepare
